@@ -22,6 +22,10 @@ PORT=3001 npm run start
 
 ## Vercel Deployment
 
+**Live URL**: https://alifeisalife.vercel.app/
+
+**Deployment Note**: Ensure git commits are authored by `mrmccloudfox` account to avoid Vercel collaboration blocking. If commits show `iccredman` as author, deployments will be blocked.
+
 This repo includes `vercel.json` and serverless functions under `api/`.
 
 Vercel settings:

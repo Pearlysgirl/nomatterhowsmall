@@ -6,12 +6,13 @@ import {
   Globe,
   Play,
   Shield,
-  ShoppingBag,
+  // ShoppingBag, // Temporarily removed
 } from "lucide-react";
 
 import { REPORTED_DETAILS, STORIES } from "./components/staticData";
-import SupportBoard from "./components/SupportBoard";
-import TShirtCustomizer from "./components/TShirtCustomizer";
+// Temporarily removed for section simplification
+// import SupportBoard from "./components/SupportBoard";
+// import TShirtCustomizer from "./components/TShirtCustomizer";
 
 import heroPoemImage from "./assets/images/hero.jpg";
 import storyImage1 from "./assets/images/story-1.png";
@@ -21,15 +22,16 @@ import storyImage3 from "./assets/images/story-3.png";
 const storyImages = [storyImage3, storyImage2, storyImage1];
 
 export default function App() {
-  const [sessionOrders, setSessionOrders] = useState<any[]>([]);
+  // Temporarily removed for section simplification
+  // const [sessionOrders, setSessionOrders] = useState<any[]>([]);
 
-  useEffect(() => {
-    loadOrdersHistory();
-  }, []);
+  // useEffect(() => {
+  //   loadOrdersHistory();
+  // }, []);
 
-  const loadOrdersHistory = () => {
-    setSessionOrders(JSON.parse(localStorage.getItem("tee_orders") || "[]"));
-  };
+  // const loadOrdersHistory = () => {
+  //   setSessionOrders(JSON.parse(localStorage.getItem("tee_orders") || "[]"));
+  // };
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -65,12 +67,14 @@ export default function App() {
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
+                {/* Temporarily removed for section simplification
                 <button
                   onClick={() => scrollToSection("t-shirt-advocacy")}
                   className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
                 >
                   Buy the shirt
                 </button>
+                */}
                 <a
                   href={STORIES[2].linkUrl}
                   target="_blank"
@@ -223,6 +227,7 @@ export default function App() {
           </div>
         </section>
 
+        {/* Temporarily removed for section simplification
         <section id="t-shirt-advocacy" className="bg-[#0d1110] py-16 md:py-20">
           <div className="mx-auto max-w-[1050px] px-5">
             <div className="mx-auto mb-10 max-w-[580px] text-center">
@@ -235,7 +240,9 @@ export default function App() {
             <TShirtCustomizer onOrderSuccess={loadOrdersHistory} />
           </div>
         </section>
+        */}
 
+        {/* Temporarily removed for section simplification
         <section id="community-board" className="border-t border-white/8 bg-[#111614] py-16">
           <div className="mx-auto max-w-[1050px] px-5">
             <div className="mb-9 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
@@ -250,7 +257,9 @@ export default function App() {
             <SupportBoard />
           </div>
         </section>
+        */}
 
+        {/* Temporarily removed for section simplification
         {sessionOrders.length > 0 && (
           <section className="border-t border-white/8 bg-[#0d1110] py-14">
             <div className="mx-auto max-w-[1050px] px-5">
@@ -274,6 +283,7 @@ export default function App() {
             </div>
           </section>
         )}
+        */}
       </main>
 
       <footer className="bg-[#080a09] px-5 py-9 text-center text-xs text-[#9d9385]">
