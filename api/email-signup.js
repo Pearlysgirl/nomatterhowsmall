@@ -1,8 +1,16 @@
 import { createClient } from '@supabase/supabase-js';
+import { Resend } from 'resend';
 
 // Initialize Supabase client
 const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+// Initialize Resend client
+const resendApiKey = process.env.RESEND_API_KEY;
+let resend = null;
+if (resendApiKey) {
+  resend = new Resend(resendApiKey);
+}
 
 let supabase = null;
 if (supabaseUrl && supabaseServiceKey) {
@@ -147,6 +155,42 @@ export default async function handler(req, res) {
         });
       }
       throw error;
+    }
+
+    // Send email notification if Resend is configured
+    if (resend) {
+      try {
+        // Get total signup count for the notification
+        const { count: totalSignups } = await supabase
+          .from('email_signups')
+          .select('*', { count: 'exact', head: true });
+
+        await resend.emails.send({
+          from: 'onboarding@resend.dev',
+          to: 'jackicaskey@gmail.com',
+          subject: `New Email Signup - ${firstName} ${lastName}`,
+          html: `
+            <h2>New Newsletter Signup</h2>
+            <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Signed up:</strong> ${new Date().toLocaleString('en-US', {
+              timeZone: 'America/Denver',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit'
+            })}</p>
+            <p><strong>Source:</strong> Newsletter signup form</p>
+            <p><strong>Total signups:</strong> ${totalSignups || 'Unknown'}</p>
+            <hr>
+            <p><em>Sent from nomatterhowsmall.life</em></p>
+          `
+        });
+      } catch (emailError) {
+        // Log email error but don't fail the signup
+        console.error('Failed to send notification email:', emailError);
+      }
     }
 
     return res.status(201).json({
