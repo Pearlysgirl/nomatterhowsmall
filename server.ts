@@ -184,7 +184,7 @@ app.post("/api/email-signup", async (req, res) => {
     const resetTime = rateLimitCheck.resetTime || Date.now();
     const minutesUntilReset = Math.ceil((resetTime - Date.now()) / (1000 * 60));
     return res.status(429).json({
-      error: `Too many signup attempts. Please try again in ${minutesUntilReset} minutes.`
+      error: `Too many signup attempts. Please try again in ${minutesUntilReset} minutes. This helps avoid bot attacks.`
     });
   }
 

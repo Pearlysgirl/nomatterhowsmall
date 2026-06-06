@@ -64,7 +64,7 @@ export default function App() {
               </div>
 
               <p className="mt-5 max-w-[470px] text-[17px] font-medium leading-snug text-[#f6efe4]">
-                A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction.
+                A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction. Sign up below for updates and to get on the list for shirts when they are available.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -87,7 +87,7 @@ export default function App() {
               </div>
 
               <p className="mt-9 max-w-[620px] text-[11px] leading-relaxed text-[#b6aa97]/75">
-                Disclaimer: 100% of campaign profits from this shirt, after production, platform, payment processing, taxes, and shipping-related costs, benefit Hope House Colorado, a 501(c)(3) nonprofit.
+                Disclaimer: 100% of campaign profits from this shirt, after production, platform, payment processing, taxes, and shipping-related costs, benefit charitable organizations.
               </p>
             </div>
           </div>
@@ -295,10 +295,10 @@ export default function App() {
 
       <footer className="bg-[#080a09] px-5 py-9 text-center text-xs text-[#9d9385]">
         <div className="mx-auto max-w-[760px]">
-          <p className="font-black uppercase text-[#d9c094]">No Matter How Small - A Benefit for Hope House</p>
+          <p className="font-black uppercase text-[#d9c094]">No Matter How Small - A Charitable Benefit Campaign</p>
           <p className="mt-3 leading-relaxed">
             <Shield className="mr-1 inline h-3.5 w-3.5" />
-            100% of campaign profits, after production/platform/payment/tax/shipping costs, benefit Hope House Colorado. Estimated benefit: $X per shirt. Printed and fulfilled by the selected platform.
+            100% of campaign profits, after production/platform/payment/tax/shipping costs, benefit charitable organizations.
           </p>
         </div>
       </footer>
