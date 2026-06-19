@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Send, Loader2, CheckCircle, Heart } from "lucide-react";
+import { Mail, Send, Loader2, CheckCircle } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { EmailSignupRequest, EmailSignupResponse } from "../types";
 
@@ -91,10 +91,10 @@ export default function EmailSignup() {
           <h2 className="text-sm font-black uppercase tracking-normal text-[#d9c094]">Stay Connected</h2>
         </div>
         <h3 className="text-3xl font-black leading-tight tracking-normal text-[#f6ead6] md:text-4xl">
-          Get updates on shirt availability and news
+          Get updates and news
         </h3>
         <p className="mt-4 text-sm leading-relaxed text-[#afa596]">
-          Be the first to know when shirts are available and get the latest updates.
+          Be the first to know how your support is making a difference and get the latest updates.
         </p>
       </div>
 
@@ -108,14 +108,10 @@ export default function EmailSignup() {
             className="mx-auto max-w-[500px] rounded-md border border-green-500/30 bg-green-500/10 p-6 text-center"
           >
             <CheckCircle className="mx-auto mb-3 h-12 w-12 text-green-400" />
-            <h4 className="text-xl font-black text-[#f6ead6]">Welcome to our community!</h4>
+            <h4 className="text-xl font-black text-[#f6ead6]">You're signed up.</h4>
             <p className="mt-2 text-sm text-[#c8bdaa]">
-              Thank you for signing up. You'll receive updates about shirt availability and campaign news.
+              We'll be in touch with updates and news.
             </p>
-            <div className="mt-4 flex items-center justify-center gap-1 text-xs text-green-400">
-              <Heart className="h-3 w-3" />
-              <span>Thank you for your support!</span>
-            </div>
           </motion.div>
         ) : (
           <motion.div
@@ -185,8 +181,7 @@ export default function EmailSignup() {
                   disabled={isSubmitting}
                 />
                 <label htmlFor="terms-checkbox" className="text-xs leading-relaxed text-[#c8bdaa]">
-                  By signing up, I agree to receive marketing emails about shirt availability and campaign updates.
-                  I understand I can unsubscribe at any time. This information will be used solely for campaign updates and supporter communication.
+                  By signing up, I agree to receive emails about campaign updates. I can unsubscribe at any time.
                 </label>
               </div>
 

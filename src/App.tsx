@@ -3,9 +3,7 @@ import {
   ArrowUpRight,
   ChevronLeft,
   ChevronRight,
-  Globe,
   Play,
-  Shield,
   // ShoppingBag, // Temporarily removed
 } from "lucide-react";
 
@@ -64,7 +62,7 @@ export default function App() {
               </div>
 
               <p className="mt-5 max-w-[470px] text-[17px] font-medium leading-snug text-[#f6efe4]">
-                A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction. Sign up below for updates and to get on the list for shirts when they are available.
+                A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -83,6 +81,14 @@ export default function App() {
                   className="rounded-full bg-[#ead6ae] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#171410] transition hover:bg-[#f6ead4]"
                 >
                   Watch the story
+                </a>
+                <a
+                  href="https://no-matter-how-small.printify.me/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                >
+                  Buy the shirt
                 </a>
               </div>
 
@@ -173,15 +179,20 @@ export default function App() {
                     <p className="text-xs font-black uppercase tracking-normal text-[#d9c094]">{detail.source}</p>
                     <p className="mt-3 text-[13px] leading-snug text-[#c8bdaa]">{detail.quote}</p>
                     <p className="mt-4 inline-flex items-center gap-1 text-[11px] font-bold text-[#f0dfbf]/80">
-                      {detail.href ? "Open source" : "Source noted in PDF"} <ArrowUpRight className="h-3 w-3" />
+                      {detail.href ? "View source" : "Source noted in PDF"} <ArrowUpRight className="h-3 w-3" />
                     </p>
                   </a>
                 ))}
               </div>
             </div>
 
-            <div className="mx-auto mt-14 max-w-[760px] text-center">
-              <div className="text-4xl font-black text-[#ead6ae]">“</div>
+            <div className="mb-10 mt-14 flex items-center gap-6">
+              <div className="h-px flex-1 bg-white/16" />
+              <span className="text-2xl text-[#d9c094]/70">✦</span>
+              <div className="h-px flex-1 bg-white/16" />
+            </div>
+
+            <div className="mx-auto max-w-[760px] text-center">
               <blockquote className="text-3xl font-black leading-tight tracking-normal text-[#f8efdf] md:text-4xl">
                 There is hope in hard situations. There is purpose in pain. Good things come out of situations that seem bleak.
               </blockquote>
@@ -191,39 +202,14 @@ export default function App() {
 
         <section id="donation-benefit" className="border-y border-white/8 bg-[#111614] py-12 md:py-16">
           <div className="mx-auto max-w-[1050px] px-5">
-            <div className="mb-9 flex items-center gap-6">
-              <div className="h-px flex-1 bg-white/16" />
-              <span className="text-2xl text-[#d9c094]/70">✦</span>
-              <div className="h-px flex-1 bg-white/16" />
-            </div>
-
-            <div className="grid gap-7 md:grid-cols-[0.7fr_1.3fr]">
-              <h2 className="max-w-[270px] text-3xl font-black uppercase leading-[0.95] tracking-normal text-[#e8c995]">
-                Benefiting Hope House Colorado
+            <div className="mx-auto max-w-[760px] text-center">
+              <h2 className="text-3xl font-black uppercase leading-[0.95] tracking-normal text-[#e8c995]">
+                Supporting Pro-Life and Free Speech Causes
               </h2>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-md border border-white/16 bg-white/[0.025] p-6">
-                  <p className="text-[14px] leading-relaxed text-[#c8bdaa]">
-                    Hope House Colorado works with parenting teen moms, offering free self-sufficiency programming and support for healthy futures for both moms and children.
-                  </p>
-                </div>
-                <div className="rounded-md border border-white/16 bg-white/[0.025] p-6">
-                  <p className="text-[14px] leading-relaxed text-[#c8bdaa]">
-                    Hope House Colorado lists itself as a 501(c)(3) nonprofit. The fundraiser should launch only after Hope House approves use of its name for this campaign.
-                  </p>
-                  <a
-                    href="https://hopehousecolorado.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-5 inline-flex items-center gap-2 text-sm font-black text-[#f0dfbf]"
-                  >
-                    <Globe className="h-4 w-4" />
-                    Visit Hope House Colorado
-                    <ArrowUpRight className="h-4 w-4" />
-                  </a>
-                </div>
-              </div>
+              <p className="mt-2 text-[12px] italic text-[#9d9385]">*Non-profit status in progress and pending</p>
+              <p className="mt-5 text-[15px] leading-relaxed text-[#c8bdaa]">
+                100% of campaign profits, after production, platform, payment processing, taxes, and shipping-related costs, go toward pro-life and free speech charitable causes. This campaign exists to turn a student's silenced voice into lasting support for the values she stands for.
+              </p>
             </div>
           </div>
         </section>
@@ -296,10 +282,6 @@ export default function App() {
       <footer className="bg-[#080a09] px-5 py-9 text-center text-xs text-[#9d9385]">
         <div className="mx-auto max-w-[760px]">
           <p className="font-black uppercase text-[#d9c094]">No Matter How Small - A Charitable Benefit Campaign</p>
-          <p className="mt-3 leading-relaxed">
-            <Shield className="mr-1 inline h-3.5 w-3.5" />
-            100% of campaign profits, after production/platform/payment/tax/shipping costs, benefit charitable organizations.
-          </p>
         </div>
       </footer>
     </div>

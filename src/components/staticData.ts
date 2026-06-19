@@ -36,7 +36,7 @@ export const STORIES: StoryItem[] = [
     id: "3",
     number: "3",
     title: "Hear the poem in her own voice",
-    description: "After she was not allowed to present the poem in class, she read it publicly so people could hear the words for themselves.",
+    description: "Silenced in class, she read her poem publicly — hear the words for yourself.",
     detailedStory: "The PDF mockup's third story link points to the student's public reading of the poem. The page presents this as the clearest way for visitors to hear the original message directly.",
     linkText: "Open on X",
     linkUrl: "https://x.com/libsoftiktok/status/2056927043099459792?s=20",
@@ -49,21 +49,21 @@ export const REPORTED_DETAILS: ReportItem[] = [
   {
     id: "1",
     source: "WHAT HAPPENED",
-    quote: "Libs of TikTok source clip referenced by the README for the initial account of the school poetry dispute.",
+    quote: "Libs of TikTok source clip for the initial account of the school poetry dispute.",
     category: "Media Coverage",
     href: "https://x.com/libsoftiktok/status/2056919525107355654?s=20"
   },
   {
     id: "2",
     source: "WHY IT IS PERSONAL",
-    quote: "Libs of TikTok source clip referenced by the README for the family context behind the poem.",
+    quote: "Libs of TikTok source clip for the family context behind the poem.",
     category: "Media Coverage",
     href: "https://x.com/libsoftiktok/status/2056937291919041009?s=20"
   },
   {
     id: "3",
     source: "POEM READING",
-    quote: "Libs of TikTok source clip referenced by the README for the student's public poem reading.",
+    quote: "Libs of TikTok source clip for the student's public poem reading.",
     category: "Media Coverage",
     href: "https://x.com/libsoftiktok/status/2056927043099459792?s=20"
   },
@@ -73,12 +73,5 @@ export const REPORTED_DETAILS: ReportItem[] = [
     quote: "Reported article on the Drake Middle School poetry presentation dispute.",
     category: "Local Reporting",
     href: "https://rockymountainvoice.com/2026/05/21/jeffco-student-barred-from-reading-pro-life-poem-after-school-calls-it-too-politically-charged/"
-  },
-  {
-    id: "5",
-    source: "HOPE HOUSE COLORADO",
-    quote: "Official organization site referenced by the README for the campaign beneficiary.",
-    category: "Beneficiary",
-    href: "https://hopehousecolorado.org/"
   }
 ];
