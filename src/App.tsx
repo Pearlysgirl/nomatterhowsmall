@@ -104,10 +104,12 @@ export default function App() {
             <div className="mb-7 flex items-center gap-4">
               <h2 className="shrink-0 text-sm font-black uppercase tracking-normal text-[#d9c094]">The story</h2>
               <div className="h-px flex-1 bg-white/18" />
+              {/* Carousel controls — re-enable when more stories are added
               <div className="hidden items-center gap-3 text-[#d9c094]/70 sm:flex">
                 <ChevronLeft className="h-5 w-5" />
                 <ChevronRight className="h-5 w-5" />
               </div>
+              */}
             </div>
 
             <div className="grid gap-5 md:grid-cols-3">
