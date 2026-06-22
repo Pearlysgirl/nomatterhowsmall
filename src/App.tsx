@@ -216,19 +216,21 @@ export default function App() {
           </div>
         </section>
 
-        <section className="border-t border-white/8 bg-[#111614] py-12 md:py-16">
+        <section className="bg-[#111614] py-12 md:py-16">
           <div className="mx-auto max-w-[1050px] px-5">
             <div className="mb-10 flex justify-center">
               <a
                 href="https://no-matter-how-small.printify.me/"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-[#f6ead4] px-10 py-5 text-base font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                className="rounded-full bg-[#ead6ae] px-10 py-5 text-base font-black uppercase tracking-normal text-[#111614] transition hover:bg-transparent hover:border hover:border-[#f6ead4] hover:text-[#f8eddb]"
               >
                 Buy the shirt
               </a>
             </div>
-            <EmailSignup />
+            <div className="border-t border-white/8 pt-12 md:pt-16">
+              <EmailSignup />
+            </div>
           </div>
         </section>
 
