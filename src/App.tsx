@@ -237,6 +237,14 @@ export default function App() {
                 >
                   Evangelical Child & Family Agency
                 </a>
+                <a
+                  href="https://hopehousecolorado.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                >
+                  Hope House
+                </a>
               </div>
             </div>
           </div>
