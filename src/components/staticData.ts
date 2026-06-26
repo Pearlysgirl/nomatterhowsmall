@@ -73,5 +73,19 @@ export const REPORTED_DETAILS: ReportItem[] = [
     quote: "Reported article on the Drake Middle School poetry presentation dispute.",
     category: "Local Reporting",
     href: "https://rockymountainvoice.com/2026/05/21/jeffco-student-barred-from-reading-pro-life-poem-after-school-calls-it-too-politically-charged/"
+  },
+  {
+    id: "5",
+    source: "STUDENTS FOR LIFE PRODUCED POEM",
+    quote: "Students for Life produced video of the student's poem.",
+    category: "Media Coverage",
+    href: "https://www.facebook.com/share/v/1Bsk2QJKZ1/?mibextid=wwXIfr"
+  },
+  {
+    id: "6",
+    source: "READING POEM AT FREEDOM FEST",
+    quote: "Student reads her poem at the Rocky Mountain Voice Freedom Fest.",
+    category: "Event",
+    href: "https://rmvfreedomfest.com/"
   }
 ];
