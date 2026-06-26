@@ -164,6 +164,10 @@ export default function App() {
                 <h2 className="mt-3 max-w-[260px] text-3xl font-black leading-none tracking-normal text-[#f6ead6]">
                   The story traveled fast.
                 </h2>
+                <p className="mt-10 max-w-[260px] text-[19px] font-bold leading-relaxed text-[#d9c094] italic">
+                  "For you created my inmost being; you knit me together in my mother's womb. I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well."
+                </p>
+                <p className="mt-2 max-w-[260px] text-[17px] font-black text-[#d9c094]">Psalms 139:13-14</p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
@@ -232,6 +236,14 @@ export default function App() {
                   className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
                 >
                   Evangelical Child & Family Agency
+                </a>
+                <a
+                  href="https://www.facebook.com/share/v/1Bsk2QJKZ1/?mibextid=wwXIfr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                >
+                  Students for Life Produced Poem
                 </a>
               </div>
             </div>
