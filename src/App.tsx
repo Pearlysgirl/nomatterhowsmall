@@ -237,14 +237,6 @@ export default function App() {
                 >
                   Evangelical Child & Family Agency
                 </a>
-                <a
-                  href="https://www.facebook.com/share/v/1Bsk2QJKZ1/?mibextid=wwXIfr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
-                >
-                  Students for Life Produced Poem
-                </a>
               </div>
             </div>
           </div>
