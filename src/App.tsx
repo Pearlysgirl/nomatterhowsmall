@@ -92,9 +92,6 @@ export default function App() {
                 </a>
               </div>
 
-              <p className="mt-9 max-w-[620px] text-[11px] leading-relaxed text-[#b6aa97]/75">
-                Disclaimer: 100% of campaign profits from this shirt, after production, platform, payment processing, taxes, and shipping-related costs, benefit charitable organizations.
-              </p>
             </div>
           </div>
         </section>
