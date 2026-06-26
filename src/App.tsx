@@ -212,6 +212,32 @@ export default function App() {
           </div>
         </section>
 
+        <section className="border-b border-white/8 bg-[#111614] py-12 md:py-16">
+          <div className="mx-auto max-w-[1050px] px-5">
+            <div className="mx-auto max-w-[760px] text-center">
+              <h2 className="mb-7 text-3xl font-black uppercase tracking-normal text-[#d9c094]">Pro-Life Causes Worth Supporting</h2>
+              <div className="flex flex-wrap justify-center gap-4">
+                <a
+                  href="https://studentsforlife.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                >
+                  Students For Life
+                </a>
+                <a
+                  href="https://evancfa.org"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-full border border-[#f6ead4] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#f8eddb] transition hover:bg-[#f6ead4] hover:text-[#111614]"
+                >
+                  Evangelical Child & Family Agency
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-[#111614] py-12 md:py-16">
           <div className="mx-auto max-w-[1050px] px-5">
             <div className="mb-10 flex justify-center">
