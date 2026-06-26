@@ -207,7 +207,7 @@ export default function App() {
               </h2>
               <p className="mt-2 text-[12px] italic text-[#9d9385]">*Non-profit status in progress and pending</p>
               <p className="mt-5 text-[15px] leading-relaxed text-[#c8bdaa]">
-                100% of campaign profits, after production, platform, payment processing, taxes, and shipping-related costs, go toward pro-life and free speech charitable causes. This campaign exists to turn a student's silenced voice into lasting support for the values she stands for.
+                Portion of campaign profits, after production, platform, payment processing, taxes, and shipping-related costs, go toward pro-life and free speech charitable causes. This campaign exists to turn a student's silenced voice into lasting support for the values she stands for.
               </p>
             </div>
           </div>
