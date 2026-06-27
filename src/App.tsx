@@ -13,7 +13,7 @@ import EmailSignup from "./components/EmailSignup";
 // import SupportBoard from "./components/SupportBoard";
 // import TShirtCustomizer from "./components/TShirtCustomizer";
 
-import heroPoemImage from "./assets/images/hero.jpg";
+import heroPoemImage from "./assets/images/photo4.jpg";
 import storyImage1 from "./assets/images/story-1.png";
 import storyImage2 from "./assets/images/story-2.png";
 import storyImage3 from "./assets/images/story-3.png";
@@ -43,12 +43,11 @@ export default function App() {
           <img
             src={heroPoemImage}
             alt="Young girl in a dark, cinematic portrait inspired by the poem story"
-            className="absolute inset-0 h-full w-full scale-x-[-1] object-cover object-[36%_center]"
+            className="absolute inset-0 h-full w-full scale-x-[-1] object-cover object-[left_50%]"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,13,12,0.98)_0%,rgba(10,13,12,0.82)_34%,rgba(10,13,12,0.18)_66%,rgba(10,13,12,0.20)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_32%,rgba(229,174,105,0.16),transparent_30%),linear-gradient(180deg,transparent_62%,#111614_100%)]" />
 
-          <div className="relative mx-auto flex min-h-[640px] max-w-[1050px] items-center px-5 pb-12 pt-20 md:min-h-[720px]">
+          <div className="relative mx-auto flex min-h-[640px] max-w-[1050px] items-center pl-2 pr-5 pb-12 pt-20 md:min-h-[720px]">
             <div className="max-w-[650px]">
               <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
                 <h1 className="max-w-[560px] text-[64px] font-black uppercase leading-[0.89] tracking-normal text-[#f1dfbf] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[82px] md:text-[96px]">
