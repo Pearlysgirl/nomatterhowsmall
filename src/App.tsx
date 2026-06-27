@@ -56,12 +56,9 @@ export default function App() {
                   <span className="block text-[#daeef5]">no matter how</span>
                   <span className="block text-[#7ec8e3]">small.</span>
                 </h1>
-                <div className="absolute right-5 bottom-40 max-w-[180px] text-[15px] font-extrabold uppercase leading-tight tracking-normal text-[#7ec8e3]">
-                  3,000,000+ views and counting
-                </div>
               </div>
 
-              <p className="mt-5 max-w-[470px] text-[17px] font-medium leading-snug text-[#daeef5]">
+              <p className="mt-5 max-w-[470px] text-[17px] font-medium leading-snug text-[#7ec8e3]">
                 A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction.
               </p>
 
@@ -90,6 +87,9 @@ export default function App() {
                 >
                   Buy the shirt
                 </a>
+              </div>
+              <div className="mt-4 text-[15px] font-extrabold uppercase leading-tight tracking-normal text-[#7ec8e3]">
+                3,000,000+ views and counting
               </div>
 
             </div>
