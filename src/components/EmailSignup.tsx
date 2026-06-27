@@ -87,13 +87,13 @@ export default function EmailSignup() {
     <div className="mx-auto max-w-[800px] text-center">
       <div className="mb-8">
         <div className="mb-4 flex items-center justify-center gap-2">
-          <Mail className="h-5 w-5 text-[#d9c094]" />
-          <h2 className="text-sm font-black uppercase tracking-normal text-[#d9c094]">Stay Connected</h2>
+          <Mail className="h-5 w-5 text-[#7ec8e3]" />
+          <h2 className="text-sm font-black uppercase tracking-normal text-[#7ec8e3]">Stay Connected</h2>
         </div>
-        <h3 className="text-3xl font-black leading-tight tracking-normal text-[#f6ead6] md:text-4xl">
+        <h3 className="text-3xl font-black leading-tight tracking-normal text-[#a8d8ea] md:text-4xl">
           Get updates and news
         </h3>
-        <p className="mt-4 text-sm leading-relaxed text-[#afa596]">
+        <p className="mt-4 text-sm leading-relaxed text-[#8ab4c2]">
           Be the first to know how your support is making a difference and get the latest updates.
         </p>
       </div>
@@ -108,8 +108,8 @@ export default function EmailSignup() {
             className="mx-auto max-w-[500px] rounded-md border border-green-500/30 bg-green-500/10 p-6 text-center"
           >
             <CheckCircle className="mx-auto mb-3 h-12 w-12 text-green-400" />
-            <h4 className="text-xl font-black text-[#f6ead6]">You're signed up.</h4>
-            <p className="mt-2 text-sm text-[#c8bdaa]">
+            <h4 className="text-xl font-black text-[#a8d8ea]">You're signed up.</h4>
+            <p className="mt-2 text-sm text-[#9ac4d0]">
               We'll be in touch with updates and news.
             </p>
           </motion.div>
@@ -123,7 +123,7 @@ export default function EmailSignup() {
             <form onSubmit={handleSubmit} className="mx-auto max-w-[500px] space-y-4 text-left">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wide text-[#d9c094] mb-2">
+                  <label className="block text-xs font-bold uppercase tracking-wide text-[#7ec8e3] mb-2">
                     First Name *
                   </label>
                   <input
@@ -133,12 +133,12 @@ export default function EmailSignup() {
                     placeholder="Your first name"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#f6ead6] placeholder-[#9d9385] transition focus:border-[#d9c094]/70 focus:bg-white/[0.045] focus:outline-none"
+                    className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#a8d8ea] placeholder-[#6a9aaa] transition focus:border-[#7ec8e3]/70 focus:bg-white/[0.045] focus:outline-none"
                     disabled={isSubmitting}
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wide text-[#d9c094] mb-2">
+                  <label className="block text-xs font-bold uppercase tracking-wide text-[#7ec8e3] mb-2">
                     Last Name *
                   </label>
                   <input
@@ -148,14 +148,14 @@ export default function EmailSignup() {
                     placeholder="Your last name"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
-                    className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#f6ead6] placeholder-[#9d9385] transition focus:border-[#d9c094]/70 focus:bg-white/[0.045] focus:outline-none"
+                    className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#a8d8ea] placeholder-[#6a9aaa] transition focus:border-[#7ec8e3]/70 focus:bg-white/[0.045] focus:outline-none"
                     disabled={isSubmitting}
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wide text-[#d9c094] mb-2">
+                <label className="block text-xs font-bold uppercase tracking-wide text-[#7ec8e3] mb-2">
                   Email Address *
                 </label>
                 <input
@@ -165,7 +165,7 @@ export default function EmailSignup() {
                   placeholder="your.email@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#f6ead6] placeholder-[#9d9385] transition focus:border-[#d9c094]/70 focus:bg-white/[0.045] focus:outline-none"
+                  className="w-full rounded-md border border-white/16 bg-white/[0.025] px-4 py-3 text-sm text-[#a8d8ea] placeholder-[#6a9aaa] transition focus:border-[#7ec8e3]/70 focus:bg-white/[0.045] focus:outline-none"
                   disabled={isSubmitting}
                 />
               </div>
@@ -177,10 +177,10 @@ export default function EmailSignup() {
                   required
                   checked={agreedToTerms}
                   onChange={(e) => setAgreedToTerms(e.target.checked)}
-                  className="mt-1 h-4 w-4 rounded border border-white/16 bg-white/[0.025] text-[#d9c094] focus:ring-[#d9c094]/30 focus:ring-offset-0"
+                  className="mt-1 h-4 w-4 rounded border border-white/16 bg-white/[0.025] text-[#7ec8e3] focus:ring-[#7ec8e3]/30 focus:ring-offset-0"
                   disabled={isSubmitting}
                 />
-                <label htmlFor="terms-checkbox" className="text-xs leading-relaxed text-[#c8bdaa]">
+                <label htmlFor="terms-checkbox" className="text-xs leading-relaxed text-[#9ac4d0]">
                   By signing up, I agree to receive emails about campaign updates. I can unsubscribe at any time.
                 </label>
               </div>
@@ -199,7 +199,7 @@ export default function EmailSignup() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full rounded-full bg-[#ead6ae] px-6 py-3 text-sm font-black uppercase tracking-normal text-[#171410] transition hover:bg-[#f6ead4] disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full rounded-full bg-[#7ec8e3] px-6 py-3 text-sm font-black uppercase tracking-normal text-[#101513] transition hover:bg-[#a8d8ea] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <span className="flex items-center justify-center gap-2">
@@ -215,7 +215,7 @@ export default function EmailSignup() {
                 </button>
               </div>
 
-              <p className="pt-2 text-center text-xs text-[#9d9385]/75">
+              <p className="pt-2 text-center text-xs text-[#6a9aaa]/75">
                 We respect your privacy and will never sell or share your information with third parties.
               </p>
             </form>

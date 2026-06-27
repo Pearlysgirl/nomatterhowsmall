@@ -28,7 +28,7 @@ export default function TShirtCustomizer({ userEmail = "matt.mcclain79@gmail.com
 
   const sizes: ("XS" | "S" | "M" | "L" | "XL" | "XXL")[] = ["XS", "S", "M", "L", "XL", "XXL"];
   const colors: { name: "Black" | "Vintage White" | "Charcoal"; class: string; textHex: string }[] = [
-    { name: "Black", class: "bg-neutral-900 border-neutral-700", textHex: "#F5F5DC" },
+    { name: "Black", class: "bg-neutral-900 border-neutral-700", textHex: "#daeef5" },
     { name: "Vintage White", class: "bg-amber-50 border-neutral-300", textHex: "#111827" },
     { name: "Charcoal", class: "bg-neutral-700 border-neutral-500", textHex: "#F3F4F6" }
   ];
@@ -99,7 +99,7 @@ export default function TShirtCustomizer({ userEmail = "matt.mcclain79@gmail.com
               >
                 <path
                   d="M27 15 L32 20 L40 20 C42 15, 58 15, 60 20 L68 20 L73 15 L85 24 L78 35 L76 34 L76 85 C76 88, 74 90, 71 90 L29 90 C26 90, 24 88, 24 85 L24 34 L22 35 L15 24 Z"
-                  fill={selectedColor === "Vintage White" ? "#F9F6EE" : "#32353B"}
+                  fill={selectedColor === "Vintage White" ? "#daeef5" : "#32353B"}
                   stroke="#4b5563"
                   strokeWidth="1.5"
                 />
@@ -115,7 +115,7 @@ export default function TShirtCustomizer({ userEmail = "matt.mcclain79@gmail.com
                 <foreignObject x="32" y="38" width="36" height="30" className="overflow-visible">
                   <div 
                     style={{ 
-                      color: selectedColor === "Vintage White" ? "#1e293b" : "#fdf6e2",
+                      color: selectedColor === "Vintage White" ? "#1e293b" : "#daeef5",
                     }}
                     className="w-full text-center leading-tight select-none pointer-events-none"
                   >
