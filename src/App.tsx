@@ -51,7 +51,7 @@ export default function App() {
           <div className="relative mx-auto flex min-h-[640px] max-w-[1050px] items-start pl-2 pr-5 pb-12 pt-14 md:min-h-[720px]">
             <div className="max-w-[650px]">
               <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
-                <h1 className="max-w-[560px] text-[44px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[62px] md:text-[96px]">
+                <h1 className="max-w-[560px] text-[52px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[72px] md:text-[96px]">
                   A life is a life,
                   <span className="block text-[#daeef5]">no matter how</span>
                   <span className="block text-[#7ec8e3]">small.</span>
