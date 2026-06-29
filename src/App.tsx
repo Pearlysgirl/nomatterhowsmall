@@ -43,7 +43,7 @@ export default function App() {
           <img
             src={heroPoemImage}
             alt="Young girl in a dark, cinematic portrait inspired by the poem story"
-            className="absolute inset-0 h-full w-full scale-x-[-1] object-cover object-[70%_50%]"
+            className="absolute inset-0 h-full w-full scale-x-[-1] object-cover object-[right_50%]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,13,12,0.7)_0%,rgba(10,13,12,0.45)_34%,rgba(10,13,12,0.05)_66%,rgba(10,13,12,0.05)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_32%,rgba(229,174,105,0.16),transparent_30%),linear-gradient(180deg,transparent_62%,#111614_100%)]" />
@@ -51,7 +51,7 @@ export default function App() {
           <div className="relative mx-auto flex min-h-[640px] max-w-[1050px] items-start pl-2 pr-5 pb-12 pt-14 md:min-h-[720px]">
             <div className="max-w-[650px]">
               <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
-                <h1 className="max-w-[560px] text-[64px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[82px] md:text-[96px]">
+                <h1 className="max-w-[560px] text-[44px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[62px] md:text-[96px]">
                   A life is a life,
                   <span className="block text-[#daeef5]">no matter how</span>
                   <span className="block text-[#7ec8e3]">small.</span>
