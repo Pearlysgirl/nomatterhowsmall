@@ -86,6 +86,6 @@ export const REPORTED_DETAILS: ReportItem[] = [
     source: "READING POEM AT FREEDOM FEST",
     quote: "Student reads her poem at the Rocky Mountain Voice Freedom Fest.",
     category: "Event",
-    href: "https://rmvfreedomfest.com/"
+    href: "https://www.facebook.com/share/v/1725xZkEqb/"
   }
 ];
