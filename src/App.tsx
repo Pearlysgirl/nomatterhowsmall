@@ -51,7 +51,7 @@ export default function App() {
           <div className="relative mx-auto flex min-h-[640px] max-w-[1050px] items-start pl-2 pr-5 pb-12 pt-14 md:min-h-[720px]">
             <div className="max-w-[650px]">
               <div className="grid gap-5 md:grid-cols-[1fr_auto] md:items-end">
-                <h1 className="max-w-[560px] text-[52px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[72px] md:text-[96px]">
+                <h1 className="max-w-[560px] text-[58px] font-black uppercase leading-[0.89] tracking-normal text-[#7ec8e3] drop-shadow-[0_4px_0_rgba(0,0,0,0.55)] sm:text-[72px] md:text-[96px]">
                   A life is a life,
                   <span className="block text-[#daeef5]">no matter how</span>
                   <span className="block text-[#7ec8e3]">small.</span>
@@ -83,7 +83,7 @@ export default function App() {
                   href="https://no-matter-how-small.printify.me/"
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-[#7ec8e3] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#daeef5] transition hover:bg-[#7ec8e3] hover:text-[#111614]"
+                  className="rounded-full bg-[#7ec8e3] px-6 py-3 text-xs font-black uppercase tracking-normal text-[#101513] transition hover:bg-[#a8d8ea]"
                 >
                   Buy the shirt
                 </a>
