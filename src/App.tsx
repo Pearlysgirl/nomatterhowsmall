@@ -58,7 +58,7 @@ export default function App() {
                 </h1>
               </div>
 
-              <p className="mt-5 max-w-[470px] text-[17px] font-medium leading-snug text-[#7ec8e3]">
+              <p className="mt-5 inline-block max-w-[470px] rounded-lg bg-black/40 px-4 py-3 text-[17px] font-medium leading-snug text-[#7ec8e3]">
                 A t-shirt inspired by a 13-year-old girl's poem about life and the freedom to speak with conviction.
               </p>
 
